@@ -22,15 +22,21 @@
 		<li>Description: {{event.description}}</li>
 		{% for user in event.attendees.all %}
 		<li>Attendees: {{user}}</li>
+		<br/>
 		{% endfor %}
 	</ul>
-
+    
 
     </p>
     
   </div>
+  <div class="card-footer">
+		  <a href="{% url 'update-event' event.id %}" class="btn btn-secondary">Update Event</a>
+          <a href="{% url 'delete-event' event.id %}" class="btn btn-danger">Delete Event</a>
+          
+  </div>
 </div>
-	
+	<br/>
 {% endfor %}
 
 {% endblock %}

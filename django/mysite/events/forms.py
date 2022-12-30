@@ -12,7 +12,7 @@ class VenueForm(ModelForm):
         #and add some style
 
 		widgets = {
-			'name': forms.TextInput(attrs={'class':'form-control','placeholder':'Venue Name '}),
+                        'name': forms.TextInput(attrs={'class':'form-control','placeholder':'Venue Name '}),
 			'address': forms.TextInput(attrs={'class':'form-control','placeholder':'Address'}),
 			'zip_code': forms.TextInput(attrs={'class':'form-control','placeholder':'Zip Code'}),
 			'phone': forms.TextInput(attrs={'class':'form-control','placeholder':'Phone'}),
@@ -38,7 +38,7 @@ class EventForm(ModelForm):
         #and add some style
 
 		widgets = {
-			'name': forms.TextInput(attrs={'class':'form-control','placeholder':'Venue Name '}),
+			'name': forms.TextInput(attrs={'class':'form-control','placeholder':'Event Name '}),
 			'event_date': forms.TextInput(attrs={'class':'form-control','placeholder':'Date'}),
 			'venue': forms.Select(attrs={'class':'form-select','placeholder':'Venue'}),
 			'manager': forms.Select(attrs={'class':'form-select','placeholder':'Manager'}),
