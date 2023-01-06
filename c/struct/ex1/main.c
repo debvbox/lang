@@ -16,7 +16,7 @@ int main(){
     
     meme.age = 21;
     
-	printf("%s is %d year old\n",meme.name,meme.age);
+	printf("%s is %d year old HELLOOOO\n",meme.name,meme.age);
 	
     return 0;
 }

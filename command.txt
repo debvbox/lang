@@ -1,0 +1,2 @@
+1. pressing <Esc> and then u will undo the latest change.
+
